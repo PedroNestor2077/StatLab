@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./coin-styles.css">
+</head>
+
+<body>
+    <form>
+        <div class="input-container">
+            <input type="number" id="number-of-coins" placeholder="Número de moedas" />
+        </div>
+
+        <div class="input-container">
+            <input type="number" id="number-of-throws" placeholder="Número de lançamentos" />
+        </div>
+
+        <button onclick="playCoins()" type="button">Jogar</button>
+    </form>
+
+    <div id="results">
+        <p>Número de caras: <span id="number-of-heads">0 (0%)</span></p>
+        <p>Número de coroas: <span id="number-of-tails">0 (0%)</span></p>
+
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_VnhOCi.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+    </div>
+
+    <script src="coin-script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>

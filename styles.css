@@ -1,0 +1,42 @@
+.experiments {
+    margin: 16px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 32px;
+}
+
+.card {
+    height: 300px;
+    width: 150px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    transition: 300ms;
+    box-shadow: 1px 2px 4px 1px #e3e3e3;
+    margin: 8px;
+    padding: 16px 32px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card a {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
