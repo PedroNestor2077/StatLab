@@ -10,28 +10,33 @@
 </head>
 
 <body>
+    <div id='load'>
+        <img src='images/load.svg' class='load' width='100px'></img>
+    </div>
+    <video autoplay muted loop class=video-bg>
+        <source src="images/bg.mp4" type="video/mp4">
+    </video>
+    <h1>Stat Lab</h1>
     <form>
-        <div class="input-container">
+        <h3>CARA OU COROA</h3>
+        <div class="input-container"></div>
             <input type="number" id="number-of-coins" placeholder="Número de moedas" />
-        </div>
-
-        <div class="input-container">
             <input type="number" id="number-of-throws" placeholder="Número de lançamentos" />
         </div>
-
         <button onclick="playCoins()" type="button">Jogar</button>
+        <a href='index.html'>Voltar</a>
     </form>
+    <div id='results-container'>
+        <div id="results">
+            <p>Número de caras: <span id="number-of-heads">0 (0%)</span></p>
+            <p>Número de coroas: <span id="number-of-tails">0 (0%)</span></p>
+            <button id='back'>Voltar</button>
+           
 
-    <div id="results">
-        <p>Número de caras: <span id="number-of-heads">0 (0%)</span></p>
-        <p>Número de coroas: <span id="number-of-tails">0 (0%)</span></p>
-
-        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_VnhOCi.json" background="transparent"
-            speed="1" style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+        </div>
     </div>
 
     <script src="coin-script.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>

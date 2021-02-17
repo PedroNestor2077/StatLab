@@ -1,5 +1,11 @@
+function Back(){
+    document.getElementById('results-container').style.display='none';
+}
 function playCoins() {
-
+    document.getElementById('load').style.display = "flex";
+    setTimeout(()=>{
+    document.getElementById('load').style.display = "none";
+    document.getElementById('results-container').style.display='flex';
     // pegar o numero de moedas
     const inputNumCoins = document.getElementById("number-of-coins");
     const numberCoins = Number(inputNumCoins.value);
@@ -34,5 +40,6 @@ function playCoins() {
 
     // atualizar o numero de coroas apresentado
     const pNumTails = document.getElementById("number-of-tails");
-    pNumTails.innerHTML = `${numberTails} (${percentTails} %)`;
+    pNumTails.innerHTML = `${numberTails} (${percentTails} %)`;},1500)
 }
+document.getElementById('back').addEventListener('click',Back)

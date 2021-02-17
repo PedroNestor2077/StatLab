@@ -92,6 +92,9 @@ h1{
     border:none;
     cursor:pointer;
 }
+.button-nav:hover{
+    top:-3px;
+}
 #next{
     right:0px;
 }
